@@ -1,1 +1,86 @@
-Webbing my Site
+<html>
+    <head>
+       <style>
+           h1 {
+               background-color: blue;
+           }
+
+           p {
+               background-color: rgb(80, 83, 255);
+           }
+
+       </style>
+
+    </head>
+   
+    <body>
+        <header>
+            <h1>CLass 1 Lab</h1>
+        </header>
+
+        <main>
+            <p>What is your name?</p>
+            <p>What is you favorite fruit?</p>
+            <p>What kinda bake bakery good do you like?</p>
+            <p>At what day do you want the world to end? (Lowercase please)</p>
+
+
+
+        
+        <script>
+           // Code Block 1
+           // Get data from the user
+            var userName = prompt('What is your name?');
+            var greeting = 'Youre name is: ';
+        
+            // display data to the user
+            alert(greeting + userName);
+        
+            // log data to your developer console
+            console.log('The users name is ' + userName);
+        
+            //////////////////////////////////////////////////////
+
+            // Code Block 2
+            var fruit = prompt('What is you favorite fruit?');
+            console.log('The user\'s favorite frut is ' + fruit);
+        
+            alert('Your favorite fruit is ' + fruit);
+            console.log('Block 2 Answer: ' + fruit)
+
+            /////////////////////////////////////////////////////
+            //Code Block 3
+            var bakeGood = prompt('What kinda bake bakery good do you like?')
+            
+            alert('Sentient Being: ' + userName + ' likes to to eat ' + fruit + ' ' + bakeGood);
+            console.log('Block 3 Answer' + bakeGood)
+
+            /////////////////////////////////////////////////////
+            //Code Block 4
+            var endworldDay = prompt('At what day do you want the world to end? (Lowercase please)');
+            
+            if ( endworldDay == 'monday' ) {
+                var weekDay = 'Monday we can fall apart!' ;
+            } else if (endworldDay == 'tuesday') {
+                var weekDay = 'Tuesday Breaks my heart!!!';
+            } else if (endworldDay == 'wednesday') {
+                var weekDay = 'Wednesday we just fall apart.' ;
+            } else if (endworldDay == 'thursday') {
+                var weekDay = 'Thursday doesn\'t even start' ;
+            } else if (endworldDay == 'friday') {
+                var weekDay = 'Not Friday that\'s when I\'m in love!!!';
+            } else if (endworldDay == 'saturday') {
+                var weekDay = 'Saturday Great!!!' ;
+            } else if (endworldDay == 'Sunday') {
+                var weekDay = 'Sunday comes too late!';
+            }
+
+            alert('Well now ' + userName + ' today is ' + weekDay + ' At least we can eat ' + fruit + ' ' + bakeGood);
+            console.log('Block 4 Answer: ' + weekDay)
+          </script>
+
+        </main>
+    </body>
+
+
+</html>
