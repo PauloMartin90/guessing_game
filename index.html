@@ -1,86 +1,31 @@
 <html>
     <head>
-       <style>
-           h1 {
-               background-color: blue;
-           }
-
-           p {
-               background-color: rgb(80, 83, 255);
-           }
-
-       </style>
-
+        <title>Lab 2</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
     </head>
-   
+
     <body>
-        <header>
-            <h1>CLass 1 Lab</h1>
+        <header> 
+            <h1> Lab 2 </h1>
+                <nav>
+            <ul>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ul>
+                </nav>
         </header>
-
-        <main>
-            <p>What is your name?</p>
-            <p>What is you favorite fruit?</p>
-            <p>What kinda bake bakery good do you like?</p>
-            <p>At what day do you want the world to end? (Lowercase please)</p>
-
-
-
         
-        <script>
-           // Code Block 1
-           // Get data from the user
-            var userName = prompt('What is your name?');
-            var greeting = 'Youre name is: ';
-        
-            // display data to the user
-            alert(greeting + userName);
-        
-            // log data to your developer console
-            console.log('The users name is ' + userName);
-        
-            //////////////////////////////////////////////////////
-
-            // Code Block 2
-            var fruit = prompt('What is you favorite fruit?');
-            console.log('The user\'s favorite frut is ' + fruit);
-        
-            alert('Your favorite fruit is ' + fruit);
-            console.log('Block 2 Answer: ' + fruit)
-
-            /////////////////////////////////////////////////////
-            //Code Block 3
-            var bakeGood = prompt('What kinda bake bakery good do you like?')
+        <article>
             
-            alert('Sentient Being: ' + userName + ' likes to to eat ' + fruit + ' ' + bakeGood);
-            console.log('Block 3 Answer' + bakeGood)
+            <p>Hiya! My name is Paulo Martin, I’m an environmentalist from Humboldt county. During the pandemic I was going to Humboldt State University working towards my environmental resource engineering degree. Since everything has gone online, I wanted to put down that path for now and work on a project that impacts the environment through coding. While going to school I worked for an outdoor recreation on campus helping Military Veterans transition to school. Before going to California to go to University I enlisted in the US Army as a canon crew member in Camp Casey, Dungducheon, South Korea. One of my major roles I served for the unit was the Company Armorer where I maintained, serviced, secured and recorded company weaponry/equipment for my company of 250 soldiers. After serving I spent time working in the Philippines trading bitcoins at local exchanges and working on a networking algorithms to create a mesh network.</p>
 
-            /////////////////////////////////////////////////////
-            //Code Block 4
-            var endworldDay = prompt('At what day do you want the world to end? (Lowercase please)');
-            
-            if ( endworldDay == 'monday' ) {
-                var weekDay = 'Monday we can fall apart!' ;
-            } else if (endworldDay == 'tuesday') {
-                var weekDay = 'Tuesday Breaks my heart!!!';
-            } else if (endworldDay == 'wednesday') {
-                var weekDay = 'Wednesday we just fall apart.' ;
-            } else if (endworldDay == 'thursday') {
-                var weekDay = 'Thursday doesn\'t even start' ;
-            } else if (endworldDay == 'friday') {
-                var weekDay = 'Not Friday that\'s when I\'m in love!!!';
-            } else if (endworldDay == 'saturday') {
-                var weekDay = 'Saturday Great!!!' ;
-            } else if (endworldDay == 'Sunday') {
-                var weekDay = 'Sunday comes too late!';
-            }
+        </article>
 
-            alert('Well now ' + userName + ' today is ' + weekDay + ' At least we can eat ' + fruit + ' ' + bakeGood);
-            console.log('Block 4 Answer: ' + weekDay)
-          </script>
-
-        </main>
+        <script src="app.js"> </script>
     </body>
 
-
+        <footer> 
+        <a>Site Map</a>
+        </footer>
 </html>
