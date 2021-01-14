@@ -128,14 +128,17 @@
             // Secret Game
             alert("This is an optional game would you like to join?")
             var confirm = prompt('Do you wanna play you only get one chance to enter: Yes/No')
-            confirm = confirm.toUpperCase
-            if  (confirm === 'YES') {
+            confirm = confirm.toUpperCase()
+            console.log(confirm)
+            if  (confirm == 'YES') {
                 alert("Who is the one of the greatest team member on the A-team?")
                 var secretGame = prompt("GOAT of the A-Team:  Hannibal / Faceman / MR.T / Murdock")
-                if (secretGame == "Mr.T") {
+                secretGame = secretGame.toUpperCase()
+                if (secretGame == "MR.T") {
                     window.location.href = 'https://www.youtube.com/watch?v=Xs2LxmrZHII';
-                } else if (secretGame != "Mr.T") {
+                } else if (secretGame != "MR.T") {
 
                     window.location.href = 'https://www.youtube.com/watch?v=syNSzONBVG0';
                 }
+                
             }
