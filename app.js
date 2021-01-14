@@ -14,7 +14,14 @@
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // Questions in Array
-            var arrayOfQuestions = ['Is my name Paulo? T/F', 'Did I work as a Outdoor Recreation Coordinator at Humboldt State? T/F', 'The country I came from was the Philippines? T/F','I like painting as a hobby? T/F','Am I a horrible cook? T/F','I have worked mainly in the music and festival scene during the past three summers? T/F'];
+            var arrayOfQuestions = [
+                'Question 1: Is my name radio DJ name Andy Narwhal?', 
+                'Question 2: I worked as a Veterans Outdoor Recreation Program at Humboldt State University? T/F', 
+                'Question 3: The country I came from was the Philippines? T/F',
+                'Question 4: I like painting as a hobby? T/F',
+                'Question 5: Am I a horrible cook? T/F',
+                'Question 6: I have worked mainly in the music and festival scene during the past three summers? T/F'];
+    
             // arrayOfQuestions[someNumber] => some number represents the position of items within the array.
             // pushed item moved this way <=
             var arrayOfAnswers = ['T', 'T', 'T', 'F', 'F', 'T'];
@@ -47,7 +54,7 @@
             }
 
 
-            ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////////////////////git
 
             // Multiple Question Array
             alert('Before for the pandemic I would go to Asian restaurants and try to to find the new immigrant there and try my best to order my meal in their language. What are the 3 languages I learned doing this method?')
@@ -59,25 +66,23 @@
                 multiResponse = prompt("Please guess the language you have " + (7-i) + " guesses remaining")
                 multiResponse = multiResponse.toUpperCase()
                 console.log(multiResponse)
-
-                for (var j=0; j < 3; j++) {
+                
+                
+                for (var j = 0; j < arraymultiQuestion.length; j++) {
                     if (multiResponse == arraymultiQuestion[j]) {
                         arraymultiresponse.push(multiResponse);
                         alert("Great Job!!! You got " + arraymultiresponse.length);
                     } else if (multiResponse !== arraymultiQuestion[j]) {
-                        alert("Sorry that was incorrect.")
                         console.log("Incorrect Answer");
                     }
                 }
 
-                if (arraymultiresponse.length == 3){
+                if (arraymultiresponse.length == arraymultiQuestion.length){
                     correctAnswers++
                     console.log(correctAnswers)
                     {break}
                 }
             }
-
-
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // Random Number Picking Game
@@ -118,6 +123,19 @@
             } else if (correctAnswers < 8) {
                 alert("Your Score: " + correctAnswers + "/8");
             }
-
-            
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            // Secret Game
+            alert("This is an optional game would you like to join?")
+            var confirm = prompt('Do you wanna play you only get one chance to enter: Yes/No')
+            confirm = confirm.toUpperCase
+            if  (confirm === 'YES') {
+                alert("Who is the one of the greatest team member on the A-team?")
+                var secretGame = prompt("GOAT of the A-Team:  Hannibal / Faceman / MR.T / Murdock")
+                if (secretGame == "Mr.T") {
+                    window.location.href = 'https://www.youtube.com/watch?v=Xs2LxmrZHII';
+                } else if (secretGame != "Mr.T") {
+
+                    window.location.href = 'https://www.youtube.com/watch?v=syNSzONBVG0';
+                }
+            }
